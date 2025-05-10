@@ -5,6 +5,7 @@ let noBtn = document.querySelector(".no-btn");
 let title = document.querySelector(".menu-title");
 let imgEl = document.querySelector(".img-menu");
 let questionEl = document.querySelector(".question-container");
+let container = document.querySelector(".main-container");
 
 let string = [
     "images/cute anime GIF.gif",
@@ -37,8 +38,8 @@ yesBtn.addEventListener("click", () => {
         })
 
         noBtn.addEventListener("mousemove", () => {
-            hor  = Math.floor((Math.random() * window.innerHeight) + 1) / 2;
-            ver  = Math.floor((Math.random() * window.innerWidth) + 1);
+            hor  = Math.floor((Math.random() * container.innerHeight) + 1) / 2;
+            ver  = Math.floor((Math.random() * container.innerWidth) + 1);
     
 
             noBtn.style.top = hor + "px"
@@ -63,8 +64,8 @@ noBtn.addEventListener("click", () => {
         })
 
         noBtn.addEventListener("mousemove", () => {
-            hor  = Math.floor((Math.random() * window.innerHeight) + 1) / 2;
-            ver  = Math.floor((Math.random() * window.innerWidth) + 1);
+            hor  = Math.floor((Math.random() * container.innerHeight) + 1) / 2;
+            ver  = Math.floor((Math.random() * container.innerWidth) + 1);
     
 
             noBtn.style.top = hor + "px"
